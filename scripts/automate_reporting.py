@@ -1,10 +1,17 @@
-"""Automation script for recurring nutrition reporting."""
+"""
+Automates weekly program monitoring reports.
+- Generates charts & summary tables
+- Saves PDFs or Excel reports
+"""
+
+import pandas as pd
 
 
-def main() -> None:
-    """Run reporting automation workflow."""
-    print("Implement automated reporting workflow here.")
+# Load processed data
+# df = pd.read_csv("../data/processed/cleaned_data.csv")
 
+# Generate summary stats
+# df_summary = df.groupby("region").agg({"malnutrition_rate": "mean"})
 
-if __name__ == "__main__":
-    main()
+# Export report
+# df_summary.to_excel("../reports/weekly_report.xlsx", index=False)
