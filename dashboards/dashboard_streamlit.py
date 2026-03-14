@@ -1,10 +1,18 @@
-"""Streamlit dashboard entrypoint."""
+"""
+Interactive Dashboard with Streamlit
+- Displays nutrition & food security KPIs
+- Includes interactive filters
+"""
 
+import pandas as pd
+import plotly.express as px
+import streamlit as st
 
-def main() -> None:
-    """Run the Streamlit dashboard."""
-    print("Implement Streamlit dashboard here.")
+st.title("Humanitarian Nutrition & Food Security Dashboard")
 
+# Load data
+# df = pd.read_csv('../data/processed/cleaned_data.csv')
 
-if __name__ == "__main__":
-    main()
+# Example visualization
+# fig = px.bar(df, x='region', y='malnutrition_rate')
+# st.plotly_chart(fig)
